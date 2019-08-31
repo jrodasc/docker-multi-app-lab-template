@@ -80,7 +80,7 @@ services:
       # Replace the mounted node modules folder with a volume:
       - frontend_node_modules:/usr/src/node_modules
     entrypoint: /usr/src/bin/dev-entrypoint
-    command: ember test --server
+    command: ember test 
     ports:
       - ${DEMO_FRONTEND_TEST_PORT:-7357}:7357
     environment: &frontend_env
